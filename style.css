@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal */
+main {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+main:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+input, select {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border: 1px solid #42a5f5;
+}
+
+/* Botão */
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #42a5f5;
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #1e88e5;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Categorias */
+p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background: #000000;
+  transition: background 0.3s;
+}
+
+#Alimentação { background: #fff3e0; color: #ef6c00; }
+#Transporte { background: #e3f2fd; color: #1565c0; }
+#Lazer      { background: #fce4ec; color: #ad1457; }
+#Outros     { background: #f3e5f5; color: #6a1b9a; }
+
+#Total {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
